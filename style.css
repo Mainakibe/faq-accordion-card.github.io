@@ -52,7 +52,6 @@ header{
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
 }
-
 .accordion-answers{
     display: none;
 }
@@ -72,7 +71,7 @@ header{
     padding-bottom: 20px;
     font-size: 12px;
     cursor: pointer;
-    
+    transition: 0.3s; 
 }
 .question-title{
     color: hsl(240, 6%, 50%) ;
@@ -93,7 +92,16 @@ header{
     left: -25%;
 }
 
-
+/*media queries*/
+@media (max-width:700px){
+    .wrapper{
+        width: 60vw;
+        height: 80vh;
+    }
+    .container{
+        width: 100%;
+    }
+}
 
 
 
