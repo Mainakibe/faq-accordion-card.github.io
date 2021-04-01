@@ -1,10 +1,7 @@
-document.querySelectorAll(".accordion-question").forEach((question)=>question.addEventListener("click",()=>{
-    if(question.parentNode.classList.contains("active")){
-        question.parentNode.classList.toggle("active")
-    }
-    else{
-        document.querySelectorAll(".accordion-question").forEach(question=>question.parentNode.classList.remove("active"))
+const accordionQuestions=document.querySelectorAll(".accordion-question")
 
-        question.parentNode.classList.add("active")
-    }
-}))
+accordionQuestions.forEach(accordionQuestion=>{
+    accordionQuestion.addEventListener("click",event=>{
+        accordionQuestion.classList.toggle("active")
+    })
+})

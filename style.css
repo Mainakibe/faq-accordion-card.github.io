@@ -34,9 +34,7 @@ body{
     background-repeat: no-repeat;
     background-position: 450% 65%;
 }
-.accordion-answer{
-    display: none;
-}
+
 .semi-wrapper{
     margin-top: 50px;
     display: flex;
@@ -63,12 +61,20 @@ h4{
 }
 .accordion-question{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: relative;
     cursor: pointer;
     transition: 0.3s;
 }
 .accordion-question img{
-    align-self: center;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-answer{
+    display: none;
+}
+.accordion-question.active + .accordion-answer{
+    display: block;
 }
 .main-logo{
     position: relative;
