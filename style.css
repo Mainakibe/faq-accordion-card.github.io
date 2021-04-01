@@ -64,6 +64,7 @@ h4{
     align-items: center;
     position: relative;
     cursor: pointer;
+    transition: 0.3s;
 }
 .accordion-question img{
     position: absolute;
